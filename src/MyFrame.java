@@ -38,7 +38,7 @@ public class MyFrame extends JFrame implements ActionListener {
 		r.add(m);
 		for (int f = 0; f<r.size(); f ++) {
 			if (m > i) {
-				m = r.indexOf(f);
+				m = r.indexOf(f);// "indexOf()" restituisce l'indice della prima occorrenza dell'elemento specificato nell'ArrayList.
 				i = m;
 			}
 		}
@@ -48,7 +48,7 @@ public class MyFrame extends JFrame implements ActionListener {
 
 		int[] g = new int[r.size()];
 		for (int h = 0; h < r.size(); h ++) {
-			g[h] = r.indexOf(h);
+			g[h] = r.indexOf(h);// Qui la stessa cosa
 		}
 		x.setText(Arrays.toString(g));
 		
